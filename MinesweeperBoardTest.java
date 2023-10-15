@@ -9,8 +9,7 @@ public class MinesweeperBoardTest {
 
     @Test
     public void neighborMinesTest() {
-        Cell test1 = new Cell(4,5,false);
-        MinesweeperBoard board = new MinesweeperBoard(9,9);
+        Cell test1 = level1.board[4][5];
         level1.board[3][4].hasMine = true;
         level1.board[4][6].hasMine = true;
         int expectedResult1 = 2;
